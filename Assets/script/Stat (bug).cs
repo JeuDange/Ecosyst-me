@@ -8,8 +8,8 @@ public class Stat : MonoBehaviour
     private float maxHealth = 100;
     private float currentHealth;
     // modification de l'image de la barre de vie
-    [SerializeField]
-    private ImageConversion healthBarFill;
+   // [SerializeField]
+    // private ImageConversion healthBarFill;
 
     [SerializeField]
     private float healthDecreaseRateForHungerAndThirst;
@@ -20,8 +20,9 @@ public class Stat : MonoBehaviour
     private float maxHunger = 100;
     private float currentHunger;
     private float currentThirst;
-    [SerializeField]
-    private Image hungerBarFill;
+    
+   // [SerializeField]
+   // private Image hungerBarFill;
 
     [SerializeField]
     private float hungerDecreaseRate;
@@ -32,8 +33,8 @@ public class Stat : MonoBehaviour
     private float maxThirst = 100;
     private float currenThirst;
 
-    [SerializeField]
-    private Image ThirstBarFill;
+    //[SerializeField]
+   // private Image ThirstBarFill;
 
     [SerializeField]
     private float ThirstDecreaseRate;
@@ -74,7 +75,7 @@ public class Stat : MonoBehaviour
 
         void UpdateHealthtBarFill()
         {
-            healthBarFill.fillAmount = currentHealth / maxHealth;
+            //healthBarFill.fillAmount = currentHealth / maxHealth;
         }
     }
     void UpdateHungerAndThirstBarFill()
@@ -88,8 +89,8 @@ public class Stat : MonoBehaviour
 
 
       //mettre a jour les visuels
-       hungerBarFill.fillAmount = currentHunger / maxHunger;
-       ThirstBarFill.fillAmount = currentThirst / maxThirst;
+       //hungerBarFill.fillAmount = currentHunger / maxHunger;
+       //ThirstBarFill.fillAmount = currentThirst / maxThirst;
 
       // si la barre de faim et/ou soif est a 0 l'entité prend des dégats (x2 si les 2 barres a 0)
          if (currentHunger <= 0 || currentThirst <= 0)
