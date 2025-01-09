@@ -8,10 +8,11 @@ public class RandomSpawner : MonoBehaviour
 
     void Update()
     {
-        //if (Input.GetKeyDown((KeyCode.Space))
-        //{
-        //    Vector3 randomSpawnPosition = new Vector3(RandomSpawner.Range(-10, 11), 5, RandomSpawner.Range(-10, 11));
-        //    Instantiate(cubePrefab, randomSpawnPosition, Quaternion.identity);
-        //}
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Vector3 randomSpawnPosition=new Vector3(Random.Range(-10, 11), 5, Random.Range(-10, 11));
+            Instantiate(cubePrefab, randomSpawnPosition, Quaternion.identity);
+        }
     }
 }
+ 
